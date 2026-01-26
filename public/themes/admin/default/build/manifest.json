@@ -264,7 +264,7 @@
     "isDynamicEntry": true
   },
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-DxbqLJkj.css",
+    "file": "assets/app-DOrL_o6p.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
@@ -316,10 +316,6 @@
     "file": "assets/error-ClRu8L1K.svg",
     "src": "src/Resources/assets/images/error.svg"
   },
-  "src/Resources/assets/images/favicon.ico": {
-    "file": "assets/favicon--PZ4cBiP.ico",
-    "src": "src/Resources/assets/images/favicon.ico"
-  },
   "src/Resources/assets/images/icon-add-product.svg": {
     "file": "assets/icon-add-product-nFt8sucb.svg",
     "src": "src/Resources/assets/images/icon-add-product.svg"
@@ -331,6 +327,10 @@
   "src/Resources/assets/images/icon-options.svg": {
     "file": "assets/icon-options-B9pp5RQf.svg",
     "src": "src/Resources/assets/images/icon-options.svg"
+  },
+  "src/Resources/assets/images/logo.png": {
+    "file": "assets/logo-En7xVNLI.png",
+    "src": "src/Resources/assets/images/logo.png"
   },
   "src/Resources/assets/images/logo.svg": {
     "file": "assets/logo-CXf-crI0.svg",
@@ -445,7 +445,7 @@
     "src": "src/Resources/assets/images/unpaid-invoices.svg"
   },
   "src/Resources/assets/js/app.js": {
-    "file": "assets/app-BxN-fTAz.js",
+    "file": "assets/app-kn64-1KI.js",
     "name": "app",
     "src": "src/Resources/assets/js/app.js",
     "isEntry": true,

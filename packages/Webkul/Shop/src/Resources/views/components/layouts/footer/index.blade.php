@@ -137,8 +137,22 @@
         {!! view_render_event('bagisto.shop.layout.footer.newsletter_subscription.after') !!}
     </div>
 
-    <div class="flex justify-between bg-[#F1EADF] px-[60px] py-3.5 max-md:justify-center max-sm:px-5">
+    <div class="flex flex-wrap items-center justify-between gap-4 bg-[#F1EADF] px-[60px] py-3.5 max-md:justify-center max-md:flex-col max-sm:px-5">
         {!! view_render_event('bagisto.shop.layout.footer.footer_text.before') !!}
+
+        <a href="{{ route('shop.home.index') }}" class="flex items-center gap-2 max-md:flex-col">
+            <img
+                src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.png') }}"
+                alt="Bizora"
+                width="120"
+                height="28"
+                class="h-7 w-auto"
+            >
+            <div class="text-center">
+                <span class="block text-sm font-semibold text-[#333366]">Bizora</span>
+                <span class="block text-xs tracking-wider text-[#333366]">BUILT FOR BUSINESS</span>
+            </div>
+        </a>
 
         <p class="text-sm text-zinc-600 max-md:text-center">
             @lang('shop::app.components.layouts.footer.footer-text', ['current_year'=> date('Y') ])

@@ -624,7 +624,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin'            => 'Beheerder',
-                'bagisto'          => 'Bagisto',
+                'bagisto'          => 'Bizora',
                 'confirm-password' => 'Bevestig wachtwoord',
                 'email'            => 'E-mail',
                 'email-address'    => 'admin@example.com',
@@ -639,7 +639,7 @@ return [
                 'application-name'            => 'Toepassingsnaam',
                 'argentine-peso'              => 'Argentijnse Peso (ARS)',
                 'australian-dollar'           => 'Australische Dollar (AUD)',
-                'bagisto'                     => 'Bagisto',
+                'bagisto'                     => 'Bizora',
                 'bangladeshi-taka'            => 'Bangladesh Taka (BDT)',
                 'bahraini-dinar'              => 'Bahreinse Dinar (BHD)',
                 'brazilian-real'              => 'Braziliaanse Real (BRL)',
@@ -732,24 +732,24 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto'          => 'Bagisto installatie',
+                'bagisto'          => 'Bizora installatie',
                 'bagisto-info'     => 'Het maken van database tabellen kan even duren',
                 'title'            => 'Installatie',
             ],
 
             'installation-completed' => [
                 'admin-panel'                => 'Beheerderspaneel',
-                'bagisto-forums'             => 'Bagisto Forum',
+                'bagisto-forums'             => 'Bizora Forum',
                 'customer-panel'             => 'Klantenpaneel',
-                'explore-bagisto-extensions' => 'Verken Bagisto-extensies',
+                'explore-bagisto-extensions' => 'Verken Bizora-extensies',
                 'title'                      => 'Installatie voltooid',
-                'title-info'                 => 'Bagisto is succesvol geïnstalleerd op uw systeem.',
+                'title-info'                 => 'Bizora is succesvol geïnstalleerd op uw systeem.',
             ],
 
             'ready-for-installation' => [
                 'create-databsae-table'   => 'Maak de databasetabel aan',
                 'install'                 => 'Installatie',
-                'install-info'            => 'Bagisto Voor Installatie',
+                'install-info'            => 'Bizora Voor Installatie',
                 'install-info-button'     => 'Klik op de knop hieronder om',
                 'populate-database-table' => 'Vul de databasetabellen',
                 'start-installation'      => 'Start Installatie',
@@ -760,8 +760,8 @@ return [
                 'locale'        => 'Locatie',
                 'main'          => 'Start',
                 'select-locale' => 'Selecteer Locatie',
-                'title'         => 'Uw Bagisto-installatie',
-                'welcome-title' => 'Welkom bij Bagisto',
+                'title'         => 'Uw Bizora-installatie',
+                'welcome-title' => 'Welkom bij Bizora',
             ],
 
             'server-requirements' => [
@@ -789,9 +789,9 @@ return [
 
             'arabic'                   => 'Arabisch',
             'back'                     => 'Terug',
-            'bagisto'                  => 'Bagisto',
+            'bagisto'                  => 'Bizora',
             'bagisto-info'             => 'Een communityproject van',
-            'bagisto-logo'             => 'Bagisto Logo',
+            'bagisto-logo'             => 'Bizora Logo',
             'bengali'                  => 'Bengaals',
             'catalan'                  => 'Catalaans',
             'chinese'                  => 'Chinees',
@@ -803,9 +803,9 @@ return [
             'hebrew'                   => 'Hebreeuws',
             'hindi'                    => 'Hindi',
             'indonesian'               => 'Indonesisch',
-            'installation-description' => 'De installatie van Bagisto omvat doorgaans verschillende stappen. Hier is een algemeen overzicht van het installatieproces voor Bagisto',
+            'installation-description' => 'De installatie van Bizora omvat doorgaans verschillende stappen. Hier is een algemeen overzicht van het installatieproces voor Bizora',
             'installation-info'        => 'We zijn blij je hier te zien!',
-            'installation-title'       => 'Welkom bij de Bagisto-installatie',
+            'installation-title'       => 'Welkom bij de Bizora-installatie',
             'italian'                  => 'Italiaans',
             'japanese'                 => 'Japans',
             'persian'                  => 'Perzisch',
@@ -814,10 +814,10 @@ return [
             'russian'                  => 'Russisch',
             'sinhala'                  => 'Singalees',
             'spanish'                  => 'Spaans',
-            'title'                    => 'Bagisto Installer',
+            'title'                    => 'Bizora Installer',
             'turkish'                  => 'Turks',
             'ukrainian'                => 'Oekraïens',
-            'webkul'                   => 'Webkul',
+            'webkul'                   => 'Bizora',
         ],
     ],
 ];

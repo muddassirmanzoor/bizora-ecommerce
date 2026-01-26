@@ -624,7 +624,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin'            => '管理者',
-                'bagisto'          => 'Bagisto',
+                'bagisto'          => 'Bizora',
                 'confirm-password' => 'パスワードの確認',
                 'email'            => 'メール',
                 'email-address'    => 'admin@example.com',
@@ -639,7 +639,7 @@ return [
                 'application-name'            => 'アプリケーション名',
                 'argentine-peso'              => 'アルゼンチンペソ（ARS）',
                 'australian-dollar'           => 'オーストラリアドル（AUD）',
-                'bagisto'                     => 'Bagisto',
+                'bagisto'                     => 'Bizora',
                 'bangladeshi-taka'            => 'バングラデシュタカ（BDT）',
                 'bahraini-dinar'              => 'バーレーンディナール（BHD）',
                 'brazilian-real'              => 'ブラジルレアル（BRL）',
@@ -732,24 +732,24 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto'          => 'Bagistoのインストール',
+                'bagisto'          => 'Bizoraのインストール',
                 'bagisto-info'     => 'データベーステーブルの作成中、これには数分かかることがあります',
                 'title'            => 'インストール',
             ],
 
             'installation-completed' => [
                 'admin-panel'                => '管理パネル',
-                'bagisto-forums'             => 'Bagistoフォーラム',
+                'bagisto-forums'             => 'Bizoraフォーラム',
                 'customer-panel'             => '顧客パネル',
-                'explore-bagisto-extensions' => 'Bagisto拡張機能の探索',
+                'explore-bagisto-extensions' => 'Bizora拡張機能の探索',
                 'title'                      => 'インストールが完了しました',
-                'title-info'                 => 'Bagistoがシステムに正常にインストールされました。',
+                'title-info'                 => 'Bizoraがシステムに正常にインストールされました。',
             ],
 
             'ready-for-installation' => [
                 'create-databsae-table'   => 'データベーステーブルを作成する',
                 'install'                 => 'インストール',
-                'install-info'            => 'インストール用のBagisto',
+                'install-info'            => 'インストール用のBizora',
                 'install-info-button'     => '以下のボタンをクリックしてください',
                 'populate-database-table' => 'データベーステーブルを作成する',
                 'start-installation'      => 'インストールを開始',
@@ -760,8 +760,8 @@ return [
                 'locale'        => 'ロケール',
                 'main'          => '開始',
                 'select-locale' => 'ロケールを選択',
-                'title'         => 'Bagistoのインストール',
-                'welcome-title' => 'Bagistoへようこそ',
+                'title'         => 'Bizoraのインストール',
+                'welcome-title' => 'Bizoraへようこそ',
             ],
 
             'server-requirements' => [
@@ -789,9 +789,9 @@ return [
 
             'arabic'                   => 'アラビア語',
             'back'                     => '戻る',
-            'bagisto'                  => 'Bagisto',
+            'bagisto'                  => 'Bizora',
             'bagisto-info'             => 'コミュニティプロジェクト by',
-            'bagisto-logo'             => 'Bagistoロゴ',
+            'bagisto-logo'             => 'Bizoraロゴ',
             'bengali'                  => 'ベンガル語',
             'catalan'                  => 'カタルーニャ語',
             'chinese'                  => '中国語',
@@ -803,9 +803,9 @@ return [
             'hebrew'                   => 'ヘブライ語',
             'hindi'                    => 'ヒンディー語',
             'indonesian'               => 'インドネシア語',
-            'installation-description' => 'Bagistoのインストールには通常、いくつかのステップが含まれます。 ここにBagistoのインストールプロセスの一般的な概要があります',
+            'installation-description' => 'Bizoraのインストールには通常、いくつかのステップが含まれます。 ここにBizoraのインストールプロセスの一般的な概要があります',
             'installation-info'        => 'ここにいてくれてうれしいです！',
-            'installation-title'       => 'Bagistoインストールへようこそ',
+            'installation-title'       => 'Bizoraインストールへようこそ',
             'italian'                  => 'イタリア語',
             'japanese'                 => '日本語',
             'persian'                  => 'ペルシャ語',
@@ -814,10 +814,10 @@ return [
             'russian'                  => 'ロシア語',
             'sinhala'                  => 'シンハラ語',
             'spanish'                  => 'スペイン語',
-            'title'                    => 'Bagistoインストーラ',
+            'title'                    => 'Bizoraインストーラ',
             'turkish'                  => 'トルコ語',
             'ukrainian'                => 'ウクライナ語',
-            'webkul'                   => 'Webkul',
+            'webkul'                   => 'Bizora',
         ],
     ],
 ];

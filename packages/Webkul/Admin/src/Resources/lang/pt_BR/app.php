@@ -5021,7 +5021,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Desenvolvido por <a href="https://bagisto.com/" target="_blank">Bagisto</a>, um projeto da comunidade <a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => 'Desenvolvido por <a href="https://bagisto.com/" target="_blank">Bizora</a>, um projeto da comunidade <a href="https://webkul.com/" target="_blank">Bizora</a>',
     ],
 
     'emails' => [

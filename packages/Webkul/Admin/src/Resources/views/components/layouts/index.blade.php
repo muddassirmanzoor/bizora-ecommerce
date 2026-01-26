@@ -35,7 +35,7 @@
     >
     <meta 
         name="generator" 
-        content="Bagisto"
+        content="Bizora"
     >
 
     @stack('meta')
@@ -55,7 +55,7 @@
     <link
         rel="preload"
         as="image"
-        href="{{ url('cache/logo/bagisto.png') }}"
+        href="{{ bagisto_asset('images/logo.png', 'admin') }}"
     >
 
     @if ($favicon = core()->getConfigData('general.design.admin_logo.favicon'))
@@ -67,10 +67,10 @@
         >
     @else
         <link
-            type="image/x-icon"
-            href="{{ bagisto_asset('images/favicon.ico') }}"
-            rel="shortcut icon"
-            sizes="16x16"
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="{{ bagisto_asset('images/logo.png') }}"
         />
     @endif
 
@@ -86,7 +86,7 @@
 <body class="h-full dark:bg-gray-950">
     {!! view_render_event('bagisto.admin.layout.body.before') !!}
 
-    <!-- Built With Bagisto -->
+    <!-- Bizora -->
     <div
         id="app"
         class="h-full"
@@ -130,10 +130,7 @@
                 <!-- Powered By -->
                 <div class="mt-auto">
                     <div class="border-t bg-white py-2 text-center text-xs sm:text-sm dark:border-gray-800 dark:bg-gray-900 dark:text-white">
-                        @lang('admin::app.components.layouts.powered-by.description', [
-                            'bagisto' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://bagisto.com/en/">Bagisto</a>',
-                            'webkul' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://webkul.com/">Webkul</a>',
-                        ])
+                        <span class="font-semibold text-[#333366]">Bizora</span> — Built For Business
                     </div>
                 </div>
             </div>

@@ -5,10 +5,10 @@ return [
         'forgot-password' => [
             'already-sent'         => 'Zaten Şifre Sıfırlama Postası Gönderildi.',
             'back'                 => 'Girişe geri dön?',
-            'bagisto'              => 'Bagisto',
+            'bagisto'              => 'Bizora',
             'email'                => 'E-posta',
             'email-not-exist'      => 'Bu e-posta adresiyle kullanıcı bulunamadı.',
-            'footer'               => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer'               => '© Telif Hakkı 2010 - :current_year, Bizora Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'forgot-password-text' => 'Parolanızı unuttuysanız, e-posta adresinizi girerek kurtarabilirsiniz.',
             'page-title'           => 'Parolanızı mı unuttunuz?',
             'reset-link-sent'      => 'Şifre sıfırlama bağlantısı e-posta ile gönderildi.',
@@ -19,21 +19,21 @@ return [
 
         'reset-password' => [
             'back-link-title'  => 'Girişe Geri Dön',
-            'bagisto'          => 'Bagisto',
+            'bagisto'          => 'Bizora',
             'confirm-password' => 'Parolayı Onayla',
             'email'            => 'Kayıtlı E-posta',
-            'footer'           => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer'           => '© Telif Hakkı 2010 - :current_year, Bizora Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'password'         => 'Parola',
             'submit-btn-title' => 'Parolayı Sıfırla',
             'title'            => 'Parolayı Sıfırla',
         ],
 
         'login-form' => [
-            'bagisto'             => 'Bagisto',
+            'bagisto'             => 'Bizora',
             'button-title'        => 'Oturum Aç',
             'create-your-account' => 'Hesabınızı oluşturun',
             'email'               => 'E-posta',
-            'footer'              => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer'              => '© Telif Hakkı 2010 - :current_year, Bizora Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'forgot-pass'         => 'Parolanızı mı unuttunuz?',
             'form-login-text'     => 'Bir hesabınız varsa, e-posta adresinizle oturum açın.',
             'invalid-credentials' => 'Kimlik bilgilerinizi kontrol edin ve yeniden deneyin.',
@@ -48,13 +48,13 @@ return [
 
         'signup-form' => [
             'account-exists'              => 'Zaten bir hesabınız var mı?',
-            'bagisto'                     => 'Bagisto',
+            'bagisto'                     => 'Bizora',
             'button-title'                => 'Kaydol',
             'click-here'                  => 'Buraya Tıklayın',
             'confirm-pass'                => 'Parolayı Onayla',
             'email'                       => 'E-posta',
             'first-name'                  => 'Ad',
-            'footer'                      => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer'                      => '© Telif Hakkı 2010 - :current_year, Bizora Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'form-signup-text'            => 'Mağazamıza yeniyseniz, sizi üye olarak görmekten mutluluk duyarız.',
             'last-name'                   => 'Soyad',
             'page-title'                  => 'Kullanıcı Ol',
@@ -490,7 +490,7 @@ return [
                     'bottom' => [
                         'all'           => 'Tümü',
                         'back-button'   => 'Ana Menüye Geri Dön',
-                        'bagisto'       => 'Bagisto',
+                        'bagisto'       => 'Bizora',
                         'categories'    => 'Kategoriler',
                         'compare'       => 'Karşılaştır',
                         'dropdown-text' => 'Sepet, Siparişler ve İstek Listesini Yönet',
@@ -511,7 +511,7 @@ return [
                 'mobile' => [
                     'account'       => 'Hesap',
                     'back-button'   => 'Ana Menüye Geri Dön',
-                    'bagisto'       => 'Bagisto',
+                    'bagisto'       => 'Bizora',
                     'compare'       => 'Karşılaştır',
                     'currencies'    => 'Para Birimleri',
                     'dropdown-text' => 'Sepet, Siparişler ve İstek Listesini Yönet',
@@ -537,7 +537,7 @@ return [
                 'customer-service'       => 'Müşteri Hizmetleri',
                 'email'                  => 'E-posta',
                 'footer-content'         => 'Alt İçerik',
-                'footer-text'            => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+                'footer-text'            => '© Telif Hakkı 2010 - :current_year, Bizora Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
                 'locale'                 => 'Yerel Ayar',
                 'newsletter-text'        => 'Eğlenceli Bültenimize Hazır Olun!',
                 'order-return'           => 'Sipariş ve İade',
@@ -937,7 +937,7 @@ return [
             'suspended-account-message' => 'Hesabınız askıya alınmıştır.',
 
             'index' => [
-                'bagisto'                  => 'Bagisto',
+                'bagisto'                  => 'Bizora',
                 'cart'                     => 'Sepet',
                 'continue-shopping'        => 'Alışverişe Devam Et',
                 'empty-product'            => 'Sepetinizde ürün bulunmuyor.',

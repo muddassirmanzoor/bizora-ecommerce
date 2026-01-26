@@ -749,7 +749,7 @@ return [
             'ready-for-installation' => [
                 'create-databsae-table'   => 'ডাটাবেস টেবিল তৈরি করুন',
                 'install-info-button'     => 'নীচের বাটনে ক্লিক করুন',
-                'install-info'            => 'ইনস্টলেশনের জন্য Bagisto',
+                'install-info'            => 'ইনস্টলেশনের জন্য Bizora',
                 'install'                 => 'ইনস্টলেশন',
                 'populate-database-table' => 'ডাটাবেস টেবিল পূর্ণ করুন',
                 'start-installation'      => 'ইনস্টলেশন শুরু করুন',
@@ -760,8 +760,8 @@ return [
                 'locale'        => 'লোকেল',
                 'main'          => 'শুরু',
                 'select-locale' => 'লোকেল নির্বাচন করুন',
-                'title'         => 'আপনার Bagisto ইনস্টলেশন',
-                'welcome-title' => 'Bagisto এ আপনাকে স্বাগতম',
+                'title'         => 'আপনার Bizora ইনস্টলেশন',
+                'welcome-title' => 'Bizora এ আপনাকে স্বাগতম',
             ],
 
             'server-requirements' => [

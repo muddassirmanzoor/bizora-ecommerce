@@ -1,0 +1,42 @@
+STEP-BY-STEP: Add to Windows Hosts File
+
+1. Press Windows Key + X
+   OR Right-click on Start Menu
+
+2. Click "Windows PowerShell (Admin)" or "Terminal (Admin)"
+   - Click "Yes" on UAC prompt (User Account Control)
+
+3. In PowerShell, type this EXACT command:
+   notepad C:\Windows\System32\drivers\etc\hosts
+   
+   Press Enter
+
+4. Notepad will open the hosts file
+
+5. Scroll to the bottom of the file (past any comments starting with #)
+
+6. Add this EXACT line at the end:
+   82.180.132.134 commerce.dixwix.com
+
+7. Save: Press Ctrl + S
+   OR File → Save
+
+8. Close Notepad
+
+9. Back in PowerShell, type this command:
+   ipconfig /flushdns
+   
+   Press Enter
+
+10. Test with:
+    ping commerce.dixwix.com
+    
+    Should show: 82.180.132.134
+
+11. Open your browser and go to:
+    http://commerce.dixwix.com/installer
+
+IMPORTANT:
+- Use http://commerce.dixwix.com/installer
+- NOT http://82.180.132.134/installer
+- The domain name is required

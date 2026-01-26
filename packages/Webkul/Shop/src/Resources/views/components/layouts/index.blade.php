@@ -41,15 +41,16 @@
         >
         <meta 
             name="generator" 
-            content="Bagisto"
+            content="Bizora"
         >
 
         @stack('meta')
 
         <link
             rel="icon"
-            sizes="16x16"
-            href="{{ core()->getCurrentChannel()->favicon_url ?? bagisto_asset('images/favicon.ico') }}"
+            type="image/png"
+            sizes="32x32"
+            href="{{ bagisto_asset('images/logo.png') }}"
         />
 
         @bagistoVite(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js'])
@@ -102,7 +103,7 @@
             Skip to main content
         </a>
 
-        <!-- Built With Bagisto -->
+        <!-- Bizora -->
         <div id="app">
             <!-- Flash Message Blade Component -->
             <x-shop::flash-group />

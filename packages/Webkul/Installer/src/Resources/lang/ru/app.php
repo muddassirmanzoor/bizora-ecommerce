@@ -624,7 +624,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin'            => 'Администратор',
-                'bagisto'          => 'Bagisto',
+                'bagisto'          => 'Bizora',
                 'confirm-password' => 'Подтвердите пароль',
                 'email'            => 'Email',
                 'email-address'    => 'admin@example.com',
@@ -639,7 +639,7 @@ return [
                 'application-name'            => 'Название приложения',
                 'argentine-peso'              => 'Аргентинское песо (ARS)',
                 'australian-dollar'           => 'Австралийский доллар (AUD)',
-                'bagisto'                     => 'Bagisto',
+                'bagisto'                     => 'Bizora',
                 'bangladeshi-taka'            => 'Бангладешская така (BDT)',
                 'bahraini-dinar'              => 'Бахрейнский динар (BHD)',
                 'brazilian-real'              => 'Бразильский реал (BRL)',
@@ -732,24 +732,24 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto'      => 'Установка Bagisto',
+                'bagisto'      => 'Установка Bizora',
                 'bagisto-info' => 'Создание таблиц в базе данных может занять несколько моментов',
                 'title'        => 'Установка',
             ],
 
             'installation-completed' => [
                 'admin-panel'                => 'Панель администратора',
-                'bagisto-forums'             => 'Форум Bagisto',
+                'bagisto-forums'             => 'Форум Bizora',
                 'customer-panel'             => 'Панель клиента',
-                'explore-bagisto-extensions' => 'Изучите расширения Bagisto',
+                'explore-bagisto-extensions' => 'Изучите расширения Bizora',
                 'title'                      => 'Установка завершена',
-                'title-info'                 => 'Bagisto успешно установлен на вашей системе.',
+                'title-info'                 => 'Bizora успешно установлен на вашей системе.',
             ],
 
             'ready-for-installation' => [
                 'create-databsae-table'   => 'Создать таблицу базы данных',
                 'install'                 => 'Установка',
-                'install-info'            => 'Bagisto для установки',
+                'install-info'            => 'Bizora для установки',
                 'install-info-button'     => 'Нажмите кнопку ниже, чтобы',
                 'populate-database-table' => 'Заполнить таблицы базы данных',
                 'start-installation'      => 'Начать установку',
@@ -760,8 +760,8 @@ return [
                 'locale'        => 'Локаль',
                 'main'          => 'Начало',
                 'select-locale' => 'Выбрать локаль',
-                'title'         => 'Ваша установка Bagisto',
-                'welcome-title' => 'Добро пожаловать в Bagisto',
+                'title'         => 'Ваша установка Bizora',
+                'welcome-title' => 'Добро пожаловать в Bizora',
             ],
 
             'server-requirements' => [
@@ -789,9 +789,9 @@ return [
 
             'arabic'                   => 'Арабский',
             'back'                     => 'Назад',
-            'bagisto'                  => 'Bagisto',
+            'bagisto'                  => 'Bizora',
             'bagisto-info'             => 'Проект сообщества от',
-            'bagisto-logo'             => 'Логотип Bagisto',
+            'bagisto-logo'             => 'Логотип Bizora',
             'bengali'                  => 'Бенгальский',
             'catalan'                  => 'Каталонский',
             'chinese'                  => 'Китайский',
@@ -803,7 +803,7 @@ return [
             'hebrew'                   => 'Иврит',
             'hindi'                    => 'Хинди',
             'indonesian'               => 'Индонезийский',
-            'installation-description' => 'Установка Bagisto обычно включает несколько шагов. Вот общий обзор процесса установки Bagisto',
+            'installation-description' => 'Установка Bizora обычно включает несколько шагов. Вот общий обзор процесса установки Bizora',
             'installation-info'        => 'Мы рады видеть вас здесь!',
             'installation-title'       => 'Добро пожаловать к установке',
             'italian'                  => 'Итальянский',
@@ -814,10 +814,10 @@ return [
             'russian'                  => 'Русский',
             'sinhala'                  => 'Сингальский',
             'spanish'                  => 'Испанский',
-            'title'                    => 'Установщик Bagisto',
+            'title'                    => 'Установщик Bizora',
             'turkish'                  => 'Турецкий',
             'ukrainian'                => 'Украинский',
-            'webkul'                   => 'Webkul',
+            'webkul'                   => 'Bizora',
         ],
     ],
 ];

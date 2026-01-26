@@ -624,7 +624,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin'            => 'Yönetici',
-                'bagisto'          => 'Bagisto',
+                'bagisto'          => 'Bizora',
                 'confirm-password' => 'Şifreyi Onayla',
                 'email'            => 'E-posta',
                 'email-address'    => 'admin@ornek.com',
@@ -639,7 +639,7 @@ return [
                 'application-name'            => 'Uygulama Adı',
                 'argentine-peso'              => 'Arjantin Pezosu (ARS)',
                 'australian-dollar'           => 'Avustralya Doları (AUD)',
-                'bagisto'                     => 'Bagisto',
+                'bagisto'                     => 'Bizora',
                 'bangladeshi-taka'            => 'Bangladeş Takası (BDT)',
                 'bahraini-dinar'              => 'Bahreyn Dinarı (BHD)',
                 'brazilian-real'              => 'Brezilya Reali (BRL)',
@@ -732,24 +732,24 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto'      => 'Bagisto Kurulumu',
+                'bagisto'      => 'Bizora Kurulumu',
                 'bagisto-info' => 'Veritabanı tabloları oluşturuluyor, bu birkaç dakika sürebilir',
                 'title'        => 'Kurulum',
             ],
 
             'installation-completed' => [
                 'admin-panel'                => 'Yönetici Paneli',
-                'bagisto-forums'             => 'Bagisto Forumu',
+                'bagisto-forums'             => 'Bizora Forumu',
                 'customer-panel'             => 'Müşteri Paneli',
-                'explore-bagisto-extensions' => 'Bagisto Uzantılarını Keşfedin',
+                'explore-bagisto-extensions' => 'Bizora Uzantılarını Keşfedin',
                 'title'                      => 'Kurulum Tamamlandı',
-                'title-info'                 => 'Bagisto sisteminize başarıyla kuruldu.',
+                'title-info'                 => 'Bizora sisteminize başarıyla kuruldu.',
             ],
 
             'ready-for-installation' => [
                 'create-databsae-table'   => 'Veritabanı tablosu oluştur',
                 'install'                 => 'Yükleme',
-                'install-info'            => 'Kurulum için Bagisto',
+                'install-info'            => 'Kurulum için Bizora',
                 'install-info-button'     => 'Aşağıdaki düğmeye tıklayın',
                 'populate-database-table' => 'Veritabanı tablolarını doldur',
                 'start-installation'      => 'Kurulumu Başlat',
@@ -760,8 +760,8 @@ return [
                 'locale'        => 'Yerel',
                 'main'          => 'Başlangıç',
                 'select-locale' => 'Yerel Seçin',
-                'title'         => 'Bagisto kurulumunuz',
-                'welcome-title' => 'Bagisto\'ya hoş geldiniz',
+                'title'         => 'Bizora kurulumunuz',
+                'welcome-title' => 'Bizora\'ya hoş geldiniz',
             ],
 
             'server-requirements' => [
@@ -789,9 +789,9 @@ return [
 
             'arabic'                   => 'Arapça',
             'back'                     => 'Geri',
-            'bagisto'                  => 'Bagisto',
-            'bagisto-info'             => 'Webkul tarafından geliştirilen bir Topluluk Projesi',
-            'bagisto-logo'             => 'Bagisto Logosu',
+            'bagisto'                  => 'Bizora',
+            'bagisto-info'             => 'Bizora tarafından geliştirilen bir Topluluk Projesi',
+            'bagisto-logo'             => 'Bizora Logosu',
             'bengali'                  => 'Bengalce',
             'catalan'                  => 'Katalanca',
             'chinese'                  => 'Çince',
@@ -803,7 +803,7 @@ return [
             'hebrew'                   => 'İbranice',
             'hindi'                    => 'Hintçe',
             'indonesian'               => 'İndonezyaca',
-            'installation-description' => 'Bagisto kurulumu genellikle birkaç adım içerir. İşte Bagisto\'nun kurulum sürecine genel bir bakış',
+            'installation-description' => 'Bizora kurulumu genellikle birkaç adım içerir. İşte Bizora\'nun kurulum sürecine genel bir bakış',
             'installation-info'        => 'Sizi burada görmekten mutluluk duyuyoruz!',
             'installation-title'       => 'Kurulum\'a Hoş Geldiniz',
             'italian'                  => 'İtalyanca',
@@ -814,10 +814,10 @@ return [
             'russian'                  => 'Rusça',
             'sinhala'                  => 'Sinhala',
             'spanish'                  => 'İspanyolca',
-            'title'                    => 'Bagisto Kurulum Sihirbazı',
+            'title'                    => 'Bizora Kurulum Sihirbazı',
             'turkish'                  => 'Türkçe',
             'ukrainian'                => 'Ukraynaca',
-            'webkul'                   => 'Webkul',
+            'webkul'                   => 'Bizora',
         ],
     ],
 ];

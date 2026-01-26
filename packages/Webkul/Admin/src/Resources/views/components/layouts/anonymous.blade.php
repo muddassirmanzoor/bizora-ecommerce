@@ -29,7 +29,7 @@
     >
     <meta 
         name="generator" 
-        content="Bagisto"
+        content="Bizora"
     >
 
     @stack('meta')
@@ -55,10 +55,10 @@
         />
     @else
         <link
-            type="image/x-icon"
-            href="{{ bagisto_asset('images/favicon.ico') }}"
-            rel="shortcut icon"
-            sizes="16x16"
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="{{ bagisto_asset('images/logo.png') }}"
         />
     @endif
 
@@ -74,7 +74,7 @@
 <body>
     {!! view_render_event('bagisto.admin.layout.body.before') !!}
 
-    <!-- Built With Bagisto -->
+    <!-- Bizora -->
     <div id="app">
         <!-- Flash Message Blade Component -->
         <x-admin::flash-group />

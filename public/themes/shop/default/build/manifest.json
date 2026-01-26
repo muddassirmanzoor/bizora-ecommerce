@@ -1,21 +1,21 @@
 {
-  "_veeValidate-BnSi22_q.js": {
-    "file": "assets/veeValidate-BnSi22_q.js",
+  "_veeValidate-7iwkjF5e.js": {
+    "file": "assets/veeValidate-7iwkjF5e.js",
     "name": "veeValidate",
     "imports": [
-      "_vue-DaFNcYaj.js"
+      "_vue-yrsH8LFT.js"
     ]
   },
-  "_vendor-CW6uOYFM.js": {
-    "file": "assets/vendor-CW6uOYFM.js",
+  "_vendor-CidK0IXC.js": {
+    "file": "assets/vendor-CidK0IXC.js",
     "name": "vendor"
   },
-  "_vue-DaFNcYaj.js": {
-    "file": "assets/vue-DaFNcYaj.js",
+  "_vue-yrsH8LFT.js": {
+    "file": "assets/vue-yrsH8LFT.js",
     "name": "vue"
   },
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-CVWqGsTj.css",
+    "file": "assets/app-CleEPv5e.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
@@ -35,10 +35,6 @@
     "file": "assets/empty-dwn-product-DYRIKFWL.png",
     "src": "src/Resources/assets/images/empty-dwn-product.png"
   },
-  "src/Resources/assets/images/favicon.ico": {
-    "file": "assets/favicon-Df9chQdB.ico",
-    "src": "src/Resources/assets/images/favicon.ico"
-  },
   "src/Resources/assets/images/hero-image.jpg": {
     "file": "assets/hero-image-BlVTwpsv.jpg",
     "src": "src/Resources/assets/images/hero-image.jpg"
@@ -50,6 +46,10 @@
   "src/Resources/assets/images/large-product-placeholder.webp": {
     "file": "assets/large-product-placeholder-B9xoAuKQ.webp",
     "src": "src/Resources/assets/images/large-product-placeholder.webp"
+  },
+  "src/Resources/assets/images/logo.png": {
+    "file": "assets/logo-En7xVNLI.png",
+    "src": "src/Resources/assets/images/logo.png"
   },
   "src/Resources/assets/images/logo.svg": {
     "file": "assets/logo-CZWQQgOF.svg",
@@ -96,14 +96,14 @@
     "src": "src/Resources/assets/images/wishlist.png"
   },
   "src/Resources/assets/js/app.js": {
-    "file": "assets/app-Dh-0BQjA.js",
+    "file": "assets/app-vpQCnEP8.js",
     "name": "app",
     "src": "src/Resources/assets/js/app.js",
     "isEntry": true,
     "imports": [
-      "_vue-DaFNcYaj.js",
-      "_vendor-CW6uOYFM.js",
-      "_veeValidate-BnSi22_q.js"
+      "_vue-yrsH8LFT.js",
+      "_vendor-CidK0IXC.js",
+      "_veeValidate-7iwkjF5e.js"
     ],
     "css": [
       "assets/app-DsP8OK1c.css"
