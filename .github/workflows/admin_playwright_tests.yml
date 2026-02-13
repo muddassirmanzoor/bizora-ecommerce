@@ -1,6 +1,7 @@
 name: Admin | Playwright Tests
 
-on: [push, pull_request]
+# Run only when manually triggered (disabled auto-run on push)
+on: [workflow_dispatch]
 
 permissions:
   contents: read
