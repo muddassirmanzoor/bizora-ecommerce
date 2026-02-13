@@ -140,10 +140,7 @@ class ProductImage
      */
     private function getFallbackImageUrls(): array
     {
-        $placeholders = config('placeholder_images.products', []);
-        $placeholder = ! empty($placeholders)
-            ? $placeholders[array_rand($placeholders)]
-            : 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80';
+        $placeholder = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80';
 
         $smallImageUrl = core()->getConfigData('catalog.products.cache_small_image.url')
                         ? Storage::url(core()->getConfigData('catalog.products.cache_small_image.url'))

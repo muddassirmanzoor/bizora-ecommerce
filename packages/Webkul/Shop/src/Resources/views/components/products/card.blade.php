@@ -5,6 +5,9 @@
 </v-product-card>
 
 @pushOnce('scripts')
+    @php
+        $productCardFallback = config('placeholder_images.products')[0] ?? '';
+    @endphp
     <script
         type="text/x-template"
         id="v-product-card-template"
@@ -35,7 +38,7 @@
                         width="291"
                         height="300"
                         ::alt="product.name"
-                        :fallback="productImageFallback"
+                        :fallback="'{{ $productCardFallback }}'"
                     />
                 </a>
 
@@ -208,7 +211,7 @@
                         width="291"
                         height="300"
                         ::alt="product.name"
-                        :fallback="productImageFallback"
+                        :fallback="'{{ $productCardFallback }}'"
                     />
                 </a>
 

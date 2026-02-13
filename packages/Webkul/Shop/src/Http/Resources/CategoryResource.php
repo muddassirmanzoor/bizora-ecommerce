@@ -19,7 +19,8 @@ class CategoryResource extends JsonResource
         $bannerExists = $this->banner_path && Storage::disk('public')->exists($this->banner_path);
 
         $categoryPlaceholders = config('placeholder_images.categories', []);
-        $defaultPlaceholder = $categoryPlaceholders['default'] ?? 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80';
+        $productImages = config('placeholder_images.products', []);
+        $defaultPlaceholder = $categoryPlaceholders['default'] ?? ($productImages[0] ?? '');
         $slug = strtolower((string) ($this->slug ?? ''));
         $name = strtolower((string) ($this->name ?? ''));
         $directUrl = $categoryPlaceholders[$slug] ?? $categoryPlaceholders[$name] ?? $defaultPlaceholder;

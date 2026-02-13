@@ -19,8 +19,8 @@
                 v-bind="$attrs"
                 :data-src="effectiveSrc"
                 :id="'image-' + $.uid"
-                @load="onLoad"
-                @error="onError"
+                @@load="onLoad"
+                @@error="onError"
                 v-show="! isLoading"
                 v-if="lazy"
             >
@@ -29,8 +29,8 @@
                 v-bind="$attrs"
                 :src="effectiveSrc"
                 :id="'image-' + $.uid"
-                @load="onLoad"
-                @error="onError"
+                @@load="onLoad"
+                @@error="onError"
                 v-show="! isLoading"
                 v-else
             >
@@ -129,4 +129,4 @@
             },
         });
     </script>
-@endPushOnce
+@endpushOnce

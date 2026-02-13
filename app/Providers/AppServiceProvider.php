@@ -40,6 +40,11 @@ class AppServiceProvider extends ServiceProvider
         $appUrl = config('app.url');
         if ($appUrl && str_starts_with(strtolower($appUrl), 'http://')) {
             URL::forceScheme('http');
+
+        // When accessed by IP, force all generated URLs to use APP_URL (so app runs properly without domain)
+        if ($appUrl && Request::getHost() === '187.77.22.201') {
+            URL::forceRootUrl($appUrl);
+        }
         }
 
         ParallelTesting::setUpTestDatabase(function (string $database, int $token) {

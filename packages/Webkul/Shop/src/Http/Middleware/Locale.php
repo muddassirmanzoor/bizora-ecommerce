@@ -22,7 +22,13 @@ class Locale
      */
     public function handle($request, Closure $next)
     {
-        $locales = core()->getCurrentChannel()->locales->pluck('code')->toArray();
+        $channel = core()->getCurrentChannel();
+
+        if (! $channel) {
+            return redirect()->route('installer.index');
+        }
+
+        $locales = $channel->locales->pluck('code')->toArray();
         $localeCode = core()->getRequestedLocaleCode('locale', false);
 
         if (! $localeCode || ! in_array($localeCode, $locales)) {
@@ -30,7 +36,7 @@ class Locale
         }
 
         if (! $localeCode || ! in_array($localeCode, $locales)) {
-            $localeCode = core()->getCurrentChannel()->default_locale->code;
+            $localeCode = $channel->default_locale->code;
         }
 
         app()->setLocale($localeCode);

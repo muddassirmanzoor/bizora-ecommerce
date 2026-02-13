@@ -33,19 +33,22 @@
                             class="h-[110px] w-[110px] rounded-full bg-zinc-100 max-md:h-20 max-md:w-20 max-sm:h-[60px] max-sm:w-[60px]"
                             :aria-label="category.name"
                         >
+                            @php
+                                $carouselFallback = config('placeholder_images.categories.default') ?? config('placeholder_images.products.0', '');
+                            @endphp
                             <x-shop::media.images.lazy
-                                ::src="category.logo?.small_image_url || fallback"
+                                ::src="category.logo?.small_image_url || '{{ $carouselFallback }}'"
                                 ::srcset="`
-                                    ${(category.logo?.small_image_url || fallback)} 60w,
-                                    ${(category.logo?.medium_image_url || fallback)} 110w,
-                                    ${(category.logo?.large_image_url || fallback)} 300w
+                                    ${(category.logo?.small_image_url || '{{ $carouselFallback }}')} 60w,
+                                    ${(category.logo?.medium_image_url || '{{ $carouselFallback }}')} 110w,
+                                    ${(category.logo?.large_image_url || '{{ $carouselFallback }}')} 300w
                                 `"
                                 sizes="(max-width: 640px) 60px, 110px"
                                 width="110"
                                 height="110"
                                 class="w-full rounded-full max-sm:h-[60px] max-sm:w-[60px]"
                                 ::alt="category.name"
-                                :fallback="fallback"
+                                :fallback="'{{ $carouselFallback }}'"
                                 :lazy="false"
                             />
                         </a>
@@ -111,9 +114,7 @@
 
                     categories: [],
 
-                    offset: 323,
-
-                    fallback: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&q=80"
+                    offset: 323
                 };
             },
 

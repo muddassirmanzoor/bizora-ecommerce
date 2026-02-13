@@ -1,6 +1,27 @@
 @props(['options'])
 
-<v-carousel :images="{{ json_encode($options['images'] ?? []) }}">
+@php
+    $rawImages = $options['images'] ?? [];
+    $sliderDefaults = config('placeholder_images.slider', [
+        ['image' => 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1920&q=80', 'title' => 'Fashion Sale', 'link' => ''],
+        ['image' => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&q=80', 'title' => 'New Arrivals', 'link' => ''],
+    ]);
+    $directDefault = $sliderDefaults[0]['image'] ?? 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&q=80';
+    $carouselImages = [];
+    foreach ($rawImages as $idx => $item) {
+        $img = is_array($item) ? $item : ['image' => $item, 'title' => '', 'link' => ''];
+        $url = $img['image'] ?? '';
+        if ($url === '' || !str_starts_with($url, 'http')) {
+            $img['image'] = $sliderDefaults[$idx % count($sliderDefaults)]['image'] ?? $directDefault;
+        }
+        $carouselImages[] = $img;
+    }
+    if (empty($carouselImages)) {
+        $carouselImages = $sliderDefaults;
+    }
+@endphp
+
+<v-carousel :images="{{ json_encode($carouselImages) }}">
     <div class="overflow-hidden">
         <div class="shimmer aspect-[2.743/1] max-h-screen w-screen"></div>
     </div>
