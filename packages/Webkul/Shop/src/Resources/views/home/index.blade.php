@@ -41,15 +41,20 @@
         {{  $channel->home_seo['meta_title'] ?? '' }}
     </x-slot>
 
-    <!-- Default slider with direct URLs (no storage/cache) -->
-    @if (!$hasImageCarousel)
-        <x-shop::carousel
-            :options="['images' => $sliderImages]"
-            aria-label="{{ trans('shop::app.home.index.image-carousel') }}"
-        />
-    @endif
+    {{-- Slider first (relative m-auto flex w-full overflow-hidden) – always on top before collections --}}
+    @php
+        $sliderAtTop = $sliderImages;
+        $carouselCustomization = $hasImageCarousel ? $customizations->first(fn ($c) => $c->type === 'image_carousel') : null;
+        if ($carouselCustomization && !empty($carouselCustomization->options['images'] ?? [])) {
+            $sliderAtTop = $carouselCustomization->options['images'];
+        }
+    @endphp
+    <x-shop::carousel
+        :options="['images' => $sliderAtTop]"
+        aria-label="{{ trans('shop::app.home.index.image-carousel') }}"
+    />
 
-    <!-- Shop by type / Collections with dummy images from the internet -->
+    <!-- Shop by type / Collections (container mt-14 ...) – after slider -->
     @include('shop::home.partials.collections-dummy')
 
     <!-- Loop over the theme customization -->
@@ -59,12 +64,7 @@
         <!-- Static content -->
         @switch ($customization->type)
             @case ($customization::IMAGE_CAROUSEL)
-                {{-- Use direct URLs from config so slider never uses storage/cache --}}
-                <x-shop::carousel
-                    :options="['images' => $sliderImages]"
-                    aria-label="{{ trans('shop::app.home.index.image-carousel') }}"
-                />
-
+                {{-- Slider already rendered at top; skip duplicate here --}}
                 @break
             @case ($customization::STATIC_CONTENT)
                 @php

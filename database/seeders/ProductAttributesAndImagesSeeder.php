@@ -82,6 +82,9 @@ class ProductAttributesAndImagesSeeder extends Seeder
             }
         }
 
+        // 3. Backfill 'new' and 'featured' so New Products / Featured Products carousels show products
+        $this->backfillNewAndFeaturedAttributes();
+
         \Illuminate\Support\Facades\Artisan::call('cache:clear');
         if (class_exists(\Spatie\ResponseCache\Facades\ResponseCache::class)) {
             \Spatie\ResponseCache\Facades\ResponseCache::clear();
@@ -164,6 +167,73 @@ class ProductAttributesAndImagesSeeder extends Seeder
             ]);
         } catch (\Throwable $e) {
             $this->command?->warn("Could not add image for product {$productId}: " . $e->getMessage());
+        }
+    }
+
+    /**
+     * Add product_attribute_values for 'new' and 'featured' so homepage carousels (New Products, Featured Products) return products.
+     */
+    protected function backfillNewAndFeaturedAttributes(): void
+    {
+        $newAttr = DB::table('attributes')->where('code', 'new')->first();
+        $featuredAttr = DB::table('attributes')->where('code', 'featured')->first();
+        if (! $newAttr && ! $featuredAttr) {
+            return;
+        }
+
+        $productIds = DB::table('product_flat')
+            ->where('channel', $this->channel)
+            ->where('locale', $this->locale)
+            ->whereNull('parent_id')
+            ->pluck('product_id');
+
+        $index = 0;
+        foreach ($productIds as $productId) {
+            if ($newAttr) {
+                $this->upsertBooleanAttribute($productId, $newAttr, 1);
+            }
+            // Mark roughly half as featured so "Featured Products" carousel has items
+            if ($featuredAttr) {
+                $this->upsertBooleanAttribute($productId, $featuredAttr, $index % 2 === 0 ? 1 : 0);
+            }
+            $index++;
+        }
+    }
+
+    protected function upsertBooleanAttribute(int $productId, object $attr, int $value): void
+    {
+        $uniqueId = implode('|', array_filter([
+            $attr->value_per_channel ? $this->channel : null,
+            $attr->value_per_locale ? $this->locale : null,
+            $productId,
+            $attr->id,
+        ]));
+
+        $exists = DB::table('product_attribute_values')
+            ->where('product_id', $productId)
+            ->where('attribute_id', $attr->id)
+            ->exists();
+
+        if ($exists) {
+            DB::table('product_attribute_values')
+                ->where('product_id', $productId)
+                ->where('attribute_id', $attr->id)
+                ->update(['boolean_value' => $value]);
+        } else {
+            DB::table('product_attribute_values')->insert([
+                'attribute_id'   => $attr->id,
+                'product_id'    => $productId,
+                'channel'       => $attr->value_per_channel ? $this->channel : null,
+                'locale'        => $attr->value_per_locale ? $this->locale : null,
+                'unique_id'     => $uniqueId,
+                'boolean_value' => $value,
+                'text_value'    => null,
+                'integer_value' => null,
+                'float_value'   => null,
+                'datetime_value'=> null,
+                'date_value'    => null,
+                'json_value'    => null,
+            ]);
         }
     }
 }
